@@ -1,1 +1,1 @@
-## 🛠️ Tech Stack & Tools
+## OSI
