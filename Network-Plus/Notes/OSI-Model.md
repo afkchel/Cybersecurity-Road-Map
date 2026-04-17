@@ -48,12 +48,16 @@ The **Open Systems Interconnection (OSI) model** is a conceptual framework used 
 ---
 
 ## 🛠️ Practical Implementation (Wireshark Analysis)
+
 <img width="1155" height="252" alt="image" src="https://github.com/user-attachments/assets/52d57ea7-ce4b-4e52-869a-dce3db63d9db" />
+
 To verify these layers, I performed a packet capture during a simple web request(ping 1.1.1.1 in cmd):
 1. **Physical:** Ethernet perfomance capture(frame data length).
 2. **Data Link:** Source and Destination **MAC Addresses**.
 We can check if GigaByteTech indeed has a MAC address by comparing it to the physical address which we can identify with the ipconfig /all cmd command
+
 <img width="676" height="456" alt="image" src="https://github.com/user-attachments/assets/01e93bfa-17c5-4bd8-a55f-e246c49cf91c" />
-3. **Network:** Source and Destination **IP Addresses**, ICMP.
+
+4. **Network:** Source and Destination **IP Addresses**, ICMP.
 
 ---
