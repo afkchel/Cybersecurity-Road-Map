@@ -1,4 +1,4 @@
-# 📑 OSI Model
+# OSI Model
 
 The **Open Systems Interconnection (OSI) model** is a conceptual framework used to understand network interactions in seven layers.
 
@@ -25,7 +25,7 @@ The **Open Systems Interconnection (OSI) model** is a conceptual framework used 
 
 ### 3. Network Layer
 - **Function:** Routing, fragmenting data
-- **Essentially:** IPs
+- **Essentially:** IPs, ICMP
 
 ### 2. Data Link Layer
 - **Function:** Physical addressing and MAC(Media Access Control).
@@ -54,6 +54,8 @@ To verify these layers, I performed a packet capture during a simple web request
 3. **Network:** Source and Destination **IP Addresses** identified.
 4. **Transport:** **TCP Port 443** (HTTPS) used for session establishment.
 5. **Application:** **TLS Handshake** and encrypted payload observed.
+<img width="1155" height="252" alt="image" src="https://github.com/user-attachments/assets/52d57ea7-ce4b-4e52-869a-dce3db63d9db" />
+
 
 ---
 *Created during Professor Messer's N10-009 Course study.*
