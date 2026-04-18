@@ -14,9 +14,8 @@ This directory serves as a central hub for my practical journey through the **Co
 
 ## 📁 Repository Structure
 
-### 1. [Network Fundamentals](./Notes/Fundamentals.md)
-*Focus: OSI Model, TCP/IP Suite, Network Topologies, and Cabling Standards.*
-- **Artifacts:** OSI Layer Cheat Sheet, Ethernet Cabling Guide (T568A/B).
+### 1. Network Fundamentals
+- **Artifacts:** [OSI Model](./Notes/OSI-Model.md), Ethernet Cabling Guide (T568A/B).
 
 ### 2. [IP Addressing & Subnetting](./Labs/Subnetting)
 *Focus: IPv4/IPv6, Classless Inter-Domain Routing (CIDR), and VLSM.*
