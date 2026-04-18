@@ -34,6 +34,18 @@ TTL acts as a "timer" or "safety switch" to prevent data from circulating indefi
 - **Default values:** 
   - **Linux/MacOS:** 64 hops.
   - **Windows:** 128 hops.
+
+  ### 🔬 Wireshark 
+
+  As shown in the packet capture below, the **Time to Live (TTL)** field is an integral part of the **Internet Protocol version 4(IPv4)** header, confirming it operates at **Layer 3 (Network Layer)**.
+
+  <img width="1113" height="372" alt="image" src="https://github.com/user-attachments/assets/29c4d44d-c994-42b8-9b50-85794abad341" />
+
+  **Observations from the Capture:**
+  *   **TTL Value:** 128 (This suggests the packet hasn't passed through any routers yet, because it is the default value for Windows').
+
+
+    
 - **Troubleshooting:** Routing loops can be identified using `tracert` (Trace Route).
 
 #### 2. TTL in DNS
