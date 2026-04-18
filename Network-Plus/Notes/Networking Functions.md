@@ -42,7 +42,7 @@ TTL acts as a "timer" or "safety switch" to prevent data from circulating indefi
   <img width="1113" height="372" alt="image" src="https://github.com/user-attachments/assets/29c4d44d-c994-42b8-9b50-85794abad341" />
 
   **Observations from the Capture:**
-  *   **TTL Value:** 128 (This suggests the packet hasn't passed through any routers yet, because it is the default value for Windows').
+  *   **TTL Value:** 128 (This suggests the packet hasn't passed through any routers yet, because it is the default value for Windows).
 
 
     
