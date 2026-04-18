@@ -36,7 +36,7 @@
 ## NAS/SAN (Network Attached Storage/Storage Area Network)
 - **Centralized data storage accessible over the network**
   
-| Feature | NAS | SAN |
+| | NAS | SAN |
 | :--- | :--- | :--- |
 | **Access** | File-level | Block-level |
 
