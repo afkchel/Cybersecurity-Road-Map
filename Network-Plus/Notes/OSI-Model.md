@@ -6,34 +6,34 @@ The **Open Systems Interconnection (OSI) model** is a conceptual framework used 
 
 ## 🏗️ The 7 Layers
 
-### 7. Application Layer
-- **Function:** Network process to application. This is where users interact with network applications.
-- **Protocols:** HTTP, HTTPS, FTP, SSH, SMTP, DNS, DHCP, POP3
-- **Essentially:** What we see
-
-### 6. Presentation Layer
-- **Function:** Data representation and encryption. Ensures that data is readable by the receiving system.
-- **Essentially:** Application encryption SSL/TLS.
-
-### 5. Session Layer
-- **Function:** Communication between devices. Can start, stop, and restart them. 
-- **Essentially:** Control, tunneling 
-
-### 4. Transport Layer
-- **Function:** Transporting data
-- **Essentially:** TCP(Transmission control protocol), UDP(User Datagram protocol)
-
-### 3. Network Layer
-- **Function:** Routing, fragmenting data
-- **Essentially:** IPs, ICMP
+### 1. Physical Layer
+- **Function:** Signaling, cabling, and binary transmission.
+- **Essentially:** Ethernet cables, hubs, and fiber optics.
 
 ### 2. Data Link Layer
-- **Function:** Physical addressing and MAC(Media Access Control).
-- **Essentially:** The switching layer
+- **Function:** Physical addressing and Media Access Control (MAC).
+- **Essentially:** The switching layer (Frames).
 
-### 1. Physical Layer
-- **Function:** Signalling, cabling.
-- **Essentially:** Ethernet 
+### 3. Network Layer
+- **Function:** Routing, IP addressing, and fragmenting data.
+- **Essentially:** IP addresses, ICMP, and Routers (Packets).
+
+### 4. Transport Layer
+- **Function:** End-to-end communication and error recovery.
+- **Essentially:** TCP (Transmission Control Protocol) and UDP (User Datagram Protocol).
+
+### 5. Session Layer
+- **Function:** Communication management between devices (Start, Stop, Restart).
+- **Essentially:** Control protocols and tunneling.
+
+### 6. Presentation Layer
+- **Function:** Data representation, compression, and encryption.
+- **Essentially:** Application encryption like SSL/TLS.
+
+### 7. Application Layer
+- **Function:** Network process to application. Where users interact with the network.
+- **Protocols:** HTTP, HTTPS, FTP, SSH, SMTP, DNS, DHCP, POP3.
+- **Essentially:** The interface we see (Data).
 
 ---
 
@@ -42,7 +42,6 @@ The **Open Systems Interconnection (OSI) model** is a conceptual framework used 
 
 | Direction | Mnemonic |
 | :--- | :--- |
-| **Top to Bottom (7-1)** | **A**ll **P**eople **S**eem **T**o **N**eed **D**ata **P**rocessing |
 | **Bottom to Top (1-7)** | **P**lease **D**o **N**ot **T**hrow **S**ausage **P**izza **A**way |
 
 ---
