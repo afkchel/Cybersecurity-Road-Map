@@ -47,10 +47,10 @@ TTL acts as a "timer" or "safety switch" to prevent data from circulating indefi
 ### 📊 Summary Table
 
 
-| Feature | Protocol | Unit of Measure | Primary Goal |
+|  | Protocol | Unit of Measure | Primary Goal |
 | :--- | :--- | :--- | :--- |
 | **CDN** | HTTP/HTTPS | Distance/Location | Reduce Latency |
 | **VPN** | Multiple | Encryption | Secure Remote Access |
 | **QoS** | Multiple | Priority Levels | Manage Bandwidth |
-| **TTL (IP)** | IPv4 | **Hops** | Stop Routing Loops |
-| **TTL (DNS)**| DNS | **Seconds** | Control Caching |
+| **TTL** | IP | **Hops** | Stop Routing Loops |
+| **TTL**| DNS | **Seconds** | Control Caching |
