@@ -18,8 +18,8 @@
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7559c87e-2137-48fd-8663-92e34752ae6b" />
 
 ## IDS/IPS (Intrusion Detection/Prevention System)
-| IDS | IPS |
-| :--- |
-| **Monitoring network traffic for vulnerabilities** |
-| :--- | :--- |
-| Detects and **alerts** but does not block. | Detects and **blocks** the attack. |
+| Feature | IDS (Detection) | IPS (Prevention) |
+| :--- | :--- | :--- |
+| **Main Function** | Monitoring network traffic for vulnerabilities | Monitoring network traffic for vulnerabilities |
+| **Action** | Detects and **alerts** but does not block. | Detects and **blocks** the attack. |
+| **Analogy** | A security camera (records/alarms). | A security guard (stops the intruder). |
