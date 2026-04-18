@@ -31,7 +31,7 @@
   
 ## Proxies
 - **An intermediate server that makes requests on behalf of a user**
-- **Security and Caching. It hides the client's IP, filters content, and speeds up access by storing copies of frequent requests**
+- **Security and Caching:** It hides the client's IP, filters content, and speeds up access by storing copies of frequent requests
 
 ## NAS/SAN (Network Attached Storage/Storage Area Network)
 - **Centralized data storage accessible over the network**
