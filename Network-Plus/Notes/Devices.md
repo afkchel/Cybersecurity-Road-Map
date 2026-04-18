@@ -40,4 +40,8 @@
 | :--- | :--- | :--- |
 | **Access** | File-level | Block-level(More efficient in reading and writing) |
 
+## NAS/SAN (Network Attached Storage/Storage Area Network)
+- **Bridges a wireless network to a wired network.**
+- **OSI layer 2 device**
+
 
