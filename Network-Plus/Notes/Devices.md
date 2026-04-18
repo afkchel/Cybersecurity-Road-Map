@@ -38,6 +38,6 @@
   
 | | NAS | SAN |
 | :--- | :--- | :--- |
-| **Access** | File-level | Block-level |
+| **Access** | File-level | Block-level(More efficient in reading and writing) |
 
 
