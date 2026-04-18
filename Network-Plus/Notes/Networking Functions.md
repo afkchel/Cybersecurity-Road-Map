@@ -1,1 +1,56 @@
+# Networking Functions
 
+
+---
+
+### CDN (Content Delivery Network)
+*   **Function:** A distributed network of servers designed to provide data efficiently from a geographically close point.
+*   **Essentially:** **Caching and Speed.** 
+*   **How it works:** If you are in North America, you access a North American CDN server instead of a centralized server in Europe. This significantly reduces latency.
+
+---
+
+### VPN (Virtual Private Network)
+*   **Function:** Creates a secure, encrypted tunnel over an insecure(public) network.
+*   **VPN Concentrator:** An access device or firewall function designed for high-speed encryption/decryption for many users simultaneously.
+---
+
+### QoS (Quality of Service)
+*   **Function:** Prioritizes specific applications or traffic types over others to ensure performance.
+*   **Essentially:** **Traffic Shaping.**
+*   **Mechanism:** Network admins can give high priority to real-time traffic (Voice/VoIP, Video) and lower priority to non-critical data (File transfers).
+*   **Managed via:** Firewalls, Routers, Switches, and Qos devices.
+
+---
+
+### ⏳ TTL (Time to Live)
+
+TTL acts as a "timer" or "safety switch" to prevent data from circulating indefinitely. Its definition changes based on the protocol:
+
+#### 1. TTL in IP (Layer 3)
+- **Measured in:** **Hops**.
+- **Purpose:** **Loop Prevention.**
+- **How it works:** Each router the packet passes through decreases the TTL by **1**. When TTL hits **0**, the packet is discarded.
+- **Default values:** 
+  - **Linux/MacOS:** 64 hops.
+  - **Windows:** 128 hops.
+- **Troubleshooting:** Routing loops can be identified using `tracert` (Trace Route).
+
+#### 2. TTL in DNS
+- **Measured in:** **Seconds**.
+- **Purpose:** **Cache Management.**
+- **How it works:** It tells your local machine how many seconds to keep a DNS record in its cache before asking the DNS server for an update.
+- **Example:** A TTL of `300` means your PC "remembers" the IP for 5 minutes.
+
+---
+
+### 📊 Summary Table
+
+
+| Feature | Protocol | Unit of Measure | Primary Goal |
+| :--- | :--- | :--- | :--- |
+| **CDN** | HTTP/HTTPS | Distance/Location | Reduce Latency |
+| **VPN** | Multiple | Encryption | Secure Remote Access |
+| **QoS** | Multiple | Priority Levels | Manage Bandwidth |
+| **TTL (IP)** | IPv4 | **Hops** | Stop Routing Loops |
+| **TTL (DNS)**| DNS | **Seconds** | Control Caching |
