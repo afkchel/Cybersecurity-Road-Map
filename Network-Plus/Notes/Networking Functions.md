@@ -44,7 +44,7 @@ TTL acts as a "timer" or "safety switch" to prevent data from circulating indefi
 
 ---
 
-### 📊 Summary Table
+### Summary Table
 
 
 |  | Protocol | Unit of Measure | Primary Goal |
