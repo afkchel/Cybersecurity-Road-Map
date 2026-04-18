@@ -44,4 +44,8 @@
 - **Bridges a wireless network to a wired network.**
 - **OSI layer 2 device**
 
+## Wireless LAN Controller (WLC)
+- **Centralized management for multiple Access Points**
+- **Usually paired with access points**
+
 
