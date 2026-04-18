@@ -18,8 +18,24 @@
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7559c87e-2137-48fd-8663-92e34752ae6b" />
 
 ## IDS/IPS (Intrusion Detection/Prevention System)
-| Feature | IDS (Detection) | IPS (Prevention) |
+- **Monitoring network traffic for vulnerabilities**
+| - | IDS (Detection) | IPS (Prevention) |
 | :--- | :--- | :--- |
-| **Main Function** | Monitoring network traffic for vulnerabilities | Monitoring network traffic for vulnerabilities |
-| **Action** | Detects and **alerts** but does not block. | Detects and **blocks** the attack. |
-| **Analogy** | A security camera (records/alarms). | A security guard (stops the intruder). |
+| **Action** | Detects and **alerts** but does not block | Detects and **blocks** the attack |
+| **Analogy** | A security camera | A security guard |
+
+## Load Balancer
+- **Distributes incoming network traffic across multiple servers**
+- **SSL/TCP offloading, caching, QoS**
+  
+## Proxies
+- **An intermediate server that makes requests on behalf of a user**
+- **Security and Caching. It hides the client's IP, filters content, and speeds up access by storing copies of frequent requests**
+
+## NAS/SAN (Network Attached Storage/Storage Area Network)
+- **Centralized data storage accessible over the network**
+| - | NAS | SAN |
+| :--- | :--- | :--- |
+| **Access** | File-level | Block-level |
+
+
