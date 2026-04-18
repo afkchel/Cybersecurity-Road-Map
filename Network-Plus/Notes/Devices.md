@@ -15,4 +15,5 @@
 - **Can be either a physical device or built-in a router**
 - **Ingress/Egress**
   
-<img width="333" height="151" alt="image" src="https://github.com/user-attachments/assets/38b28cf4-1f41-47a9-a514-44630f7c7953" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7559c87e-2137-48fd-8663-92e34752ae6b" />
+
