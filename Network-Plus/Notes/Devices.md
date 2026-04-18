@@ -17,3 +17,7 @@
   
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7559c87e-2137-48fd-8663-92e34752ae6b" />
 
+## IDS/IPS (Intrusion Detection/Prevention System)
+- **Monitoring network traffic for vulnerabilities**
+- **IDS:** Detects and **alerts** but does not block.
+- **IPS:** Detects and **blocks** the attack.
