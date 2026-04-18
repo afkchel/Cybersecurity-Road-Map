@@ -19,7 +19,7 @@
 
 ## IDS/IPS (Intrusion Detection/Prevention System)
 - **Monitoring network traffic for vulnerabilities**
-| - | IDS (Detection) | IPS (Prevention) |
+| Feature | IDS (Detection) | IPS (Prevention) |
 | :--- | :--- | :--- |
 | **Action** | Detects and **alerts** but does not block | Detects and **blocks** the attack |
 | **Analogy** | A security camera | A security guard |
@@ -34,7 +34,7 @@
 
 ## NAS/SAN (Network Attached Storage/Storage Area Network)
 - **Centralized data storage accessible over the network**
-| - | NAS | SAN |
+| Feature | NAS | SAN |
 | :--- | :--- | :--- |
 | **Access** | File-level | Block-level |
 
