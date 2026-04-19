@@ -36,15 +36,4 @@ This note covers the different ways cloud infrastructure is managed and the shar
 
 ---
 
-## ⚖️ Shared Responsibility Matrix
-
-| Responsibility | On-Premise | IaaS | PaaS | SaaS |
-| :--- | :---: | :---: | :---: | :---: |
-| **Information & Data** | Customer | **Customer** | **Customer** | **Customer** |
-| **Accounts & Devices** | Customer | **Customer** | **Customer** | **Customer** |
-| **Application Logic** | Customer | Customer | Shared/Customer | Provider |
-| **Operating System** | Customer | Customer | Provider | Provider |
-| **Network Controls** | Customer | Customer | Provider | Provider |
-| **Physical Hardware** | Customer | Provider | Provider | Provider |
-
 **Key Takeaway:** Regardless of the model (SaaS, PaaS, or IaaS), the **Customer** is always responsible for their own data, accounts, and devices.
