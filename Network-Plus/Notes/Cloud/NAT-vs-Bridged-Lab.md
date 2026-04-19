@@ -1,4 +1,4 @@
-# 🧪 Lab: Virtualization Networking Modes (NAT vs. Bridged)
+# 🧪 Lab: Virtualization Networking Modes (NAT vs Bridged)
 
 This lab explores the practical implementation of **Network Function Virtualization (NFV)** and **Virtual Network Interface Cards (VNICs)** using a Type 2 Hypervisor.
 
