@@ -53,19 +53,8 @@ TTL acts as a "timer" or "safety switch" to prevent data from circulating indefi
 - **Purpose:** **Cache Management.**
 - **How it works:** It tells your local machine how many seconds to keep a DNS record in its cache before asking the DNS server for an update.
 - **Example:** A TTL of `300` means your PC "remembers" the IP for 5 minutes.
-- **(Practical Lab: Observing DNS TTL Decay)[./Practical Lab: Observing DNS TTL Decay.md]**
-
-### 🔍 Practical Lab: Observing DNS TTL Decay
-
-#### Steps:
-1. Ran `nslookup -debug google.com` twice with a 7-second interval.
-2. Observed the **TTL (Time to Live)** value in the response.
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/a5c0d7f1-efd4-4af5-ba46-bd039edfe77b" width="45%" />
-  <img src="https://github.com/user-attachments/assets/5345d7fa-30c8-4b1a-b909-08f28f203837" width="45%" />
-</p>
-
+- **(Practical Lab: Observing DNS TTL Decay)[./DNS-TTL-Lab.md]**
+- 
 #### Analysis:
 *   **DNS TTL is measured in seconds**, unlike IP TTL which uses hops.
 *   In the first capture, the TTL was **128** seconds.
