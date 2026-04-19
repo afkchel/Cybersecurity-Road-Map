@@ -38,9 +38,6 @@ This note covers the different ways cloud infrastructure is managed and the shar
 
 ## ⚖️ Shared Responsibility Matrix
 
-Understanding who manages what is critical for security and administration.
-
-
 | Responsibility | On-Premise | IaaS | PaaS | SaaS |
 | :--- | :---: | :---: | :---: | :---: |
 | **Information & Data** | Customer | **Customer** | **Customer** | **Customer** |
