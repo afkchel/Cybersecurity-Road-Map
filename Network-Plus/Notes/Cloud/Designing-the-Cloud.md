@@ -1,6 +1,6 @@
 # ☁️ Designing the Cloud: Networking & Virtualization
 
-Notes on cloud infrastructure, Network Function Virtualization (NFV), and granular security management based on Professor Messer's course.
+Notes on cloud infrastructure, Network Function Virtualization (NFV), and granular security management.
 
 ---
 
@@ -52,5 +52,3 @@ Cloud providers use security rules (effectively virtual firewalls) to manage tra
 ### Advanced Protection
 When basic port filtering is not enough, **Virtual Firewalls** (Next-Generation Virtual Appliances) can be deployed to provide deeper packet inspection and application-aware security.
 
----
-*Created as part of the CompTIA Network+ Study Path.*
