@@ -29,7 +29,7 @@ A **VPC** is a private, isolated section of the cloud provider’s network. Key 
 | :--- | :--- |
 | **Transit Gateway** | A "cloud router" that connects multiple VPCs and on-premises networks together. |
 | **Internet Gateway** | Allows communication between the VPC and the public internet (Inbound/Outbound). |
-| **VPC NAT Gateway** | Allows private resources to access the internet (Outbound) while blocking unsolicited inbound traffic. |
+| **VPC NAT Gateway** | Allows private resources to access the internet (Outbound) while blocking unsolicited inbound traffic. [NAT vs Bridged Lab](./NAT-vs-Bridged-Lab.md)|
 | **VPC Endpoint** | Provides a direct, private connection between different cloud providers or services without using the public internet. |
 
 ---
