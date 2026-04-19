@@ -59,7 +59,6 @@ After switching to **Bridged Adapter** in VirtualBox settings:
 To verify the isolation levels, I performed a `ping` test from the **Host (Windows)** to the **Guest (Ubuntu)**:
 
 <p align="center">
-  <img width="475" height="259" alt="image" src="https://github.com/user-attachments/assets/07674cd2-e8f5-459d-b23e-7f9fe4208806" />
   <img width="517" height="391" alt="image" src="https://github.com/user-attachments/assets/b86e7f90-94a7-49a8-94df-fe08ed43caf9" />
 </p>
 
