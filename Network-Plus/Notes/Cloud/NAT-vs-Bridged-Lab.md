@@ -74,6 +74,3 @@ To verify the isolation levels, I performed a `ping` test from the **Host (Windo
 2.  **Layer 3 Addressing:** The switch from `10.x.x.x` to `192.x.x.x` demonstrates how DHCP functions differently in isolated vs. transparent virtual networks.
 3.  **Security:** NAT mode provides a default layer of security by hiding the virtual instance from the external network, whereas Bridged mode allows full transparency.
 4.  **TTL Awareness:** The `TTL=64` value in the successful ping response correctly identifies the target as a **Linux** machine, as per standard OS defaults.
-
----
-*Created as part of the CompTIA Network+ Study Path.*
