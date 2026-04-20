@@ -36,7 +36,7 @@ To capture and analyze network traffic to verify:
 
 **Technical Discovery:**
 *   **Protocol:** TCP (Transmission Control Protocol).
-*   **Destination Port:** **80** (HTTPS).
+*   **Destination Port:** **80** (HTTP).
 *   **Encryption:** I observed clear text. Using HTTP on port 80, I could read the headers and host information directly from the packet payload.
 
 ### HTTPS
@@ -54,15 +54,21 @@ To capture and analyze network traffic to verify:
 
 ## 🛠️ Step 3: The TCP 3-Way Handshake
 
-**Action:** Locate the beginning of a TCP session to observe the formal connection setup described in the theory notes.
 
-### Capture Evidence:
-<img width="1000" alt="TCP Handshake" src="ПОСИЛАННЯ_НА_СКРІН_SYN_ACK" />
+**Action:** 
+To isolate the connection establishment process, I performed the following steps:
+1.  Started a new Wireshark capture and applied the display filter `tcp.flags.syn == 1` to identify new session attempts.
+2.  Navigated to `example.com` in a web browser to generate fresh traffic.
+3.  Located the initial **[SYN]** packet sent from my IP (`192.168.31.154`) to the destination on **Port 443**.
+4.  Right-clicked the packet and selected **Follow > TCP Stream** to view the entire chronological exchange between the client and the server.
 
-**The Sequence:**
-1.  **[SYN]**: Client sends a synchronization request.
-2.  **[SYN, ACK]**: Server acknowledges and synchronizes back.
-3.  **[ACK]**: Client sends the final acknowledgment.
+<img width="1125" height="73" alt="image" src="https://github.com/user-attachments/assets/76ae6b60-02a2-420a-8956-8e08c3ee70c7" />
+
+**Technical Discovery:**
+*   **The Handshake Sequence:** 
+    - **Packet 113 [SYN]:** Connection request from Client to Server.
+    - **Packet 120 [SYN, ACK]:** Server response acknowledging the request.
+    - **Packet 121 [ACK]:** Final acknowledgement from Client, establishing a "Connection-Oriented" session.
 
 **Conclusion:** This confirms the **Connection-Oriented** nature of TCP, ensuring both devices are ready before data transfer begins.
 
