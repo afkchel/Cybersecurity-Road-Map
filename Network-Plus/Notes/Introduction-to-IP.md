@@ -31,6 +31,11 @@ A **Socket** is the complete "address" for a specific application instance:
 *   **Ephemeral Ports (Temporary):** 
     - Range: **1,024 - 65,535**
     - Purpose: Temporary sessions assigned dynamically by the client's OS.
+ 
+### For example:
+When a client (10.0.0.1) connects to a web server (10.0.0.2:80), it uses a random ephemeral port (e.g., 3000). The server responds by simply **reversing** the source and destination:
+- **Request:** Src: 10.0.0.1:3000 -> Dst: 10.0.0.2:80
+- **Response:** Src: 10.0.0.2:80 -> Dst: 10.0.0.1:3000
 
 ---
 
@@ -47,12 +52,5 @@ A **Socket** is the complete "address" for a specific application instance:
 *   **Unreliable:** No acknowledgments or error recovery.
 *   **No Flow Control:** The sender transmits as fast as it wants.
 *   **Best for:** Real-time applications where speed is more important than perfect accuracy (Streaming, VoIP, Gaming).
-
----
-
-## 🛠️ Practical Verification
-When a client (10.0.0.1) connects to a web server (10.0.0.2:80), it uses a random ephemeral port (e.g., 3000). The server responds by simply **reversing** the source and destination:
-- **Request:** Src: 10.0.0.1:3000 -> Dst: 10.0.0.2:80
-- **Response:** Src: 10.0.0.2:80 -> Dst: 10.0.0.1:3000
 
 ---
