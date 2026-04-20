@@ -1,5 +1,7 @@
 # 🚚 Introduction to IP & Transport Layer Concepts
 
+---
+
 ## 🚛 The Moving Truck Analogy
 To understand data transfer, we can use a "moving truck" analogy:
 *   **The Road:** The Network (Wired Ethernet, Wi-Fi, Fiber).
