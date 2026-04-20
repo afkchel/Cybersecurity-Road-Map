@@ -1,0 +1,64 @@
+# 🔬 Lab: The Protocol Hunter — Real-World Traffic Analysis
+
+This lab demonstrates how common protocols (**DNS, HTTP, TLS**) operate at the Transport Layer (Layer 4) and confirms their well-known port numbers using **Wireshark**.
+
+## 🎯 Objective
+To capture and analyze network traffic to verify:
+1. The use of **UDP Port 53** for DNS queries.
+2. The use of **TCP Port 80/443** for Web traffic.
+3. The **TCP 3-Way Handshake** process (Connection-Oriented communication).
+
+---
+
+## 🛠️ Step 1: DNS Analysis (UDP Port 53)
+
+**Action:** Perform a DNS lookup for `google.com` using the terminal(`nslookup google.com` command) and filter for DNS traffic in Wireshark.
+
+### Capture Evidence:
+<img width="1919" height="618" alt="image" src="https://github.com/user-attachments/assets/91e7811d-fa74-4165-9c78-6e13ee34890c" />
+
+
+**Technical Discovery:**
+*   **Protocol:** UDP (User Datagram Protocol).
+*   **Source Port:** 62143 (Ephemeral).
+*   **Destination Port:** **53** (Well-known DNS port).
+*   **Observation:** The communication is connectionless; a single request is followed by a single response.
+
+---
+
+## 🛠️ Step 2: Web Traffic Analysis (TCP Port 80/443)
+
+**Action:** Access a website (HTTP or HTTPS) and identify the port numbers used in the Transmission Control Protocol header.
+
+### Capture Evidence:
+<img width="1000" alt="HTTP/HTTPS Capture" src="ПОСИЛАННЯ_НА_СКРІН_HTTP_HTTPS" />
+
+**Technical Discovery:**
+*   **Protocol:** TCP (Transmission Control Protocol).
+*   **Destination Port:** **80** (HTTP) or **443** (HTTPS).
+*   **Encryption:** [Опиши, чи бачив ти відкритий текст HTTP чи зашифрований TLS трафік].
+
+---
+
+## 🛠️ Step 3: The TCP 3-Way Handshake
+
+**Action:** Locate the beginning of a TCP session to observe the formal connection setup described in the theory notes.
+
+### Capture Evidence:
+<img width="1000" alt="TCP Handshake" src="ПОСИЛАННЯ_НА_СКРІН_SYN_ACK" />
+
+**The Sequence:**
+1.  **[SYN]**: Client sends a synchronization request.
+2.  **[SYN, ACK]**: Server acknowledges and synchronizes back.
+3.  **[ACK]**: Client sends the final acknowledgment.
+
+**Conclusion:** This confirms the **Connection-Oriented** nature of TCP, ensuring both devices are ready before data transfer begins.
+
+---
+
+## 💡 Lab Takeaways
+*   **Socket Identification:** Confirmed that every connection is a combination of `IP + Protocol + Port`.
+*   **Reliability:** Observed the overhead of TCP (handshakes/ACKs) compared to the "fire and forget" nature of UDP.
+*   **Port Consistency:** Verified that standard services strictly follow the IANA well-known port assignments (80, 443, 53).
+
+---
