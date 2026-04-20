@@ -27,7 +27,9 @@ To capture and analyze network traffic to verify:
 
 ## 🛠️ Step 2: Web Traffic Analysis (TCP Port 80/443)
 
-*    **Action:** Access a website (http://neverssl.com/) and identify the port numbers used in the Transmission Control Protocol header.
+### HTTP
+
+**Action:** Access a website (http://neverssl.com/) and identify the port numbers used in the Transmission Control Protocol header.
 
 <img width="1787" height="859" alt="image" src="https://github.com/user-attachments/assets/b9d0d78a-2bd9-4470-aff0-5a5e0c13afaa" />
 
@@ -35,6 +37,18 @@ To capture and analyze network traffic to verify:
 **Technical Discovery:**
 *   **Protocol:** TCP (Transmission Control Protocol).
 *   **Destination Port:** **80** (HTTP).
+*   **Encryption:** I observed clear text. Using HTTP on port 80, I could read the headers and host information directly from the packet payload..
+
+### HTTPS
+
+**Action:** Access a website (https://www.youtube.com/) and identify the port numbers used in the Transmission Control Protocol header.
+
+<img width="1729" height="728" alt="image" src="https://github.com/user-attachments/assets/02d122e7-5714-47c6-8618-e00be93b88c2" />
+
+
+**Technical Discovery:**
+*   **Protocol:** TCP (Transmission Control Protocol).
+*   **Destination Port:** **80** (HTTPS).
 *   **Encryption:** I observed clear text. Using HTTP on port 80, I could read the headers and host information directly from the packet payload..
 
 ---
