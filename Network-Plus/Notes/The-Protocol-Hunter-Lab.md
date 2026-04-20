@@ -36,8 +36,8 @@ To capture and analyze network traffic to verify:
 
 **Technical Discovery:**
 *   **Protocol:** TCP (Transmission Control Protocol).
-*   **Destination Port:** **80** (HTTP).
-*   **Encryption:** I observed clear text. Using HTTP on port 80, I could read the headers and host information directly from the packet payload..
+*   **Destination Port:** **80** (HTTPS).
+*   **Encryption:** I observed clear text. Using HTTP on port 80, I could read the headers and host information directly from the packet payload.
 
 ### HTTPS
 
@@ -48,9 +48,8 @@ To capture and analyze network traffic to verify:
 
 **Technical Discovery:**
 *   **Protocol:** TCP (Transmission Control Protocol).
-*   **Destination Port:** **80** (HTTPS).
-*   **Encryption:** I observed clear text. Using HTTP on port 80, I could read the headers and host information directly from the packet payload..
-
+*   **Destination Port:** **443** (HTTPS).
+*   **Encryption:** I observed encrypted data. Using HTTPS on port 443, the payload was protected by the TLS protocol, making the actual content unreadable in the packet capture.
 ---
 
 ## 🛠️ Step 3: The TCP 3-Way Handshake
