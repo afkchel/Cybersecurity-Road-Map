@@ -74,9 +74,20 @@ To isolate the connection establishment process, I performed the following steps
 
 ---
 
-## 💡 Lab Takeaways
-*   **Socket Identification:** Confirmed that every connection is a combination of `IP + Protocol + Port`.
-*   **Reliability:** Observed the overhead of TCP (handshakes/ACKs) compared to the "fire and forget" nature of UDP.
-*   **Port Consistency:** Verified that standard services strictly follow the IANA well-known port assignments (80, 443, 53).
+## 💡 Key Takeaways
+
+After completing this laboratory work, I have verified several fundamental networking concepts:
+
+1.  **Encapsulation in Action:** I observed how application data (HTTP/DNS) is wrapped into Transport Layer protocols (TCP/UDP), confirming the modular nature of the OSI model.
+2.  **L4 Protocol Distinction:**
+    *   **UDP (DNS):** Confirmed as a "fire-and-forget" protocol with low overhead, ideal for quick queries on **Port 53**.
+    *   **TCP (Web):** Confirmed as a connection-oriented protocol that requires a formal **3-way handshake** before any data is sent.
+3.  **The Importance of Port Numbers:**
+    *   Verified that servers use **Well-known ports** (80, 443, 53) to listen for incoming services.
+    *   Verified that clients use randomized **Ephemeral ports** (e.g., 62143) to manage unique sessions.
+4.  **Security Awareness:**
+    *   **HTTP (Port 80):** Demonstrated that unencrypted traffic is vulnerable to packet sniffing, as headers are visible in clear text.
+    *   **HTTPS (Port 443):** Demonstrated how **TLS** protects user data by rendering the payload unreadable ("Encrypted Application Data") within the capture.
+5.  **Reliability:** Observed the constant flow of **ACK (Acknowledgment)** packets in TCP streams, which ensures that no data is lost during the transmission of large web resources.
 
 ---
