@@ -32,15 +32,6 @@ A **Socket** is the complete "address" for a specific application instance:
     - Range: **1,024 - 65,535**
     - Purpose: Temporary sessions assigned dynamically by the client's OS.
 
-### Common Examples:
-
-| Service | Protocol | Port |
-| :--- | :--- | :--- |
-| **HTTP** | TCP | 80 |
-| **HTTPS** | TCP | 443 |
-| **IMAP** (Email) | TCP | 143 |
-| **VoIP** | UDP | 5004 |
-
 ---
 
 ## 🔄 TCP vs. UDP: Transport Layer (Layer 4)
