@@ -48,7 +48,7 @@ To capture and analyze network traffic to verify:
 
 **Technical Discovery:**
 *   **Protocol:** TCP (Transmission Control Protocol).
-*   **Source Port(reply):** **443** (HTTPS).
+*   **Source Port:** **443** (HTTPS).
 *   **Encryption:** I observed encrypted data. Using HTTPS on port 443, the payload was protected by the TLS protocol, making the actual content unreadable in the packet capture.
 ---
 
