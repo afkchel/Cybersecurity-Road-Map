@@ -28,6 +28,7 @@
 ---
 
 ### 4. Broadcast (One-to-All)
+*   **[The broadcast lab](./Broadcast & ARP Lab.md)**
 *   **Concept:** A single packet is sent out, and every device on the local network segment receives and processes it.
 *   **Scope:** Limited to the **Local Broadcast Domain**. It cannot cross routers to reach the internet.
 *   **Use Case:** ARP requests, routing updates in IPv4.
