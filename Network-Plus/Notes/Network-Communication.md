@@ -1,7 +1,5 @@
 # 📡 Network Communication Types
 
-Notes based on Professor Messer’s CompTIA Network+ course regarding how data is addressed and distributed across a network.
-
 ---
 
 ### 1. Unicast (One-to-One)
@@ -51,4 +49,3 @@ Notes based on Professor Messer’s CompTIA Network+ course regarding how data i
 | **Broadcast**| One-to-All | Local discovery | ❌ No |
 
 ---
-*Created as part of the CompTIA Network+ Study Path.*
