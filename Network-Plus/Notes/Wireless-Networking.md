@@ -40,7 +40,7 @@ Used for remote locations where traditional cable or fiber is unavailable.
 *   **Latency (Delay):**
     - **Traditional Satellite:** High latency (approx. **250ms up / 250ms down**), resulting in a half-second round trip.
     - **Modern (e.g., Starlink):** Aiming for lower latency (approx. **20ms - 40ms**).
-*   **Speeds:** Commonly provides **100 Mbps down / 5 Mbps up**. ("Most satellite connections are asymmetric, meaning the Download speed (data to user, e.g., 100 Mbps) is significantly higher than the Upload speed (data from user, e.g., 5 Mbps) due to the power limitations of the ground-based transmitter.")
+*   **Speeds:** Commonly provides **100 Mbps down / 5 Mbps up**. (*Most satellite connections are asymmetric, meaning the Download speed (data to user, e.g., 100 Mbps) is significantly higher than the Upload speed (data from user, e.g., 5 Mbps) due to the power limitations of the ground-based transmitter.*)
 *   **Challenges:**
     - **Line of Sight:** Requires an unobstructed path to the satellite.
     - **Rain Fade:** Heavy thunderstorms can cause signal degradation or complete loss of connectivity.
