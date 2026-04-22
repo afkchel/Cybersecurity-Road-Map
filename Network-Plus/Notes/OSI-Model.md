@@ -8,7 +8,7 @@ The **Open Systems Interconnection (OSI) model** is a conceptual framework used 
 
 ### 1. Physical Layer
 - **Function:** Signaling, cabling, and binary transmission.
-- **Essentially:** [Ethernet cables](./Ethernet-Standards), hubs, and fiber optics.
+- **Essentially:** [Ethernet cables](./Ethernet_Standards), hubs, and fiber optics.
 
 ### 2. Data Link Layer
 - **Function:** Physical addressing and Media Access Control (MAC).
