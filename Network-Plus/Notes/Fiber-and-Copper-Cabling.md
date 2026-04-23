@@ -1,7 +1,5 @@
 # Optical Fiber and Copper Cabling
 
-This guide explores the foundational characteristics, hardware, and safety standards of modern network cabling, contrasting fiber optic technology with traditional copper solutions.
-
 ---
 
 ## Fiber Optic Networking
