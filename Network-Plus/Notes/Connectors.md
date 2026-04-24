@@ -44,5 +44,5 @@ Designed specifically for high-density applications and "big pipe" connections.
 | **ST** | Straight Tip | Round | Bayonet (Twist) | 1 |
 | **MPO** | Multi-fiber Push On | Rectangular | Push-Pull | 12 |
 
-> [!TIP]
+> [!]
 > Locking mechanisms are critical in server racks. With a high volume of cables, these locks prevent accidental dislodgment during maintenance or cable management.
