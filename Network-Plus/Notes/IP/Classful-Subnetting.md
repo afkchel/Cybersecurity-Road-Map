@@ -55,8 +55,7 @@ When calculating any subnet, you must identify these four specific addresses:
 ## 4. Calculation Example Walkthrough
 **Target IP:** `172.16.88.200`
 
-1. **Identify Class:** First octet is 172 $
-ightarrow$ **Class B**.
+1. **Identify Class:** First octet is 172. **Class B**.
 2. **Default Mask:** **255.255.0.0**.
 3. **Split Portions:** Network = `172.16`, Host = `.88.200`.
 4. **Calculations:**
