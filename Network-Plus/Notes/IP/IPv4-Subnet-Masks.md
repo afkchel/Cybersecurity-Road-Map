@@ -1,84 +1,72 @@
-# IPv4 Subnet Masks and CIDR Notation
+# IPv4 Subnet Masks, CIDR, and VLSM Calculations
 
-Since 1993, the networking world has moved away from rigid address classes to **Classless Inter-Domain Routing (CIDR)**. This allows for flexible subnet sizes that are not restricted to 8, 16, or 24 bits.
+Since 1993, the networking world has moved away from rigid address classes to **Classless Inter-Domain Routing (CIDR)** and **Variable-Length Subnet Masking (VLSM)**. This allows administrators to create subnets of exactly the right size for their specific needs.
 
 ---
 
 ## 1. What is a Subnet Mask?
 A subnet mask is a 32-bit value used to divide an IP address into two parts:
-1.  **Network Portion:** Identifies the specific network or subnet.
+1.  **Network/Subnet Portion:** Identifies the specific network.
 2.  **Host Portion:** Identifies the specific device on that network.
 
 ### The Rule of Contiguity
 A valid subnet mask **must** consist of a contiguous series of 1s on the left, followed by a contiguous series of 0s on the right.
-* **Valid:** `11111111.11111111.11110000.00000000`
-* **Invalid:** `11111111.00000000.11111111.00000000` (The 1s are not contiguous)
+* **Valid:** `11111111.11111111.11110000.00000000` (/20)
+* **Invalid:** `11111111.00000000.11111111.00000000` (Non-contiguous)
 
 ---
 
-## 2. CIDR Block Notation
-CIDR notation (e.g., `/24`) is a shorthand way to express the number of "1" bits in a subnet mask.
+## 2. Variable-Length Subnet Masking (VLSM)
+VLSM allows you to "borrow" bits from the host portion of a classful address to create multiple smaller subnets. Think of it as cutting a large pizza (a Class A/B/C network) into smaller, custom-sized slices.
 
-| Decimal Mask | Binary Representation (simplified) | CIDR |
+### The Borrowing Concept
+* **Network Bits:** The original bits assigned by the address class (A=8, B=16, C=24).
+* **Subnet Bits ($s$):** The additional bits "borrowed" from the host section.
+* **Host Bits ($h$):** The remaining bits used to identify devices.
+
+---
+
+## 3. The Core Formulas
+Using the powers of 2, you can quickly calculate the dimensions of any network:
+
+| To Find... | Formula | Description |
 | :--- | :--- | :--- |
-| **255.0.0.0** | 8 ones, 24 zeros | `/8` |
-| **255.255.0.0** | 16 ones, 16 zeros | `/16` |
-| **255.255.255.0** | 24 ones, 8 zeros | `/24` |
-| **255.255.255.192** | 26 ones, 6 zeros | `/26` |
+| **Number of Subnets** | $2^s$ | Where $s$ is the number of bits borrowed. |
+| **Usable Hosts** | $2^h - 2$ | Where $h$ is host bits. Subtract 2 for Network & Broadcast IDs. |
 
 ---
 
-## 3. The "Magic Table" for Mask Conversion
-Within a single octet, there are only 9 possible decimal values for a subnet mask:
+## 4. Subnetting "Cheat Sheet" (The Magic Table)
+Within a single octet, these are the only possible decimal values:
 
-| Number of 1s | Binary | Decimal Value |
-| :--- | :--- | :--- |
-| 0 | `0000 0000` | **0** |
-| 1 | `1000 0000` | **128** |
-| 2 | `1100 0000` | **192** |
-| 3 | `1110 0000` | **224** |
-| 4 | `1111 0000` | **240** |
-| 5 | `1111 1000` | **248** |
-| 6 | `1111 1100` | **252** |
-| 7 | `1111 1110` | **254** |
-| 8 | `1111 1111` | **255** |
+| 1s | Binary | Decimal | | 1s | Binary | Decimal |
+| :--- | :--- | :--- | --- | :--- | :--- | :--- |
+| 1 | `10000000` | **128** | | 5 | `11111000` | **248** |
+| 2 | `11000000` | **192** | | 6 | `11111100` | **252** |
+| 3 | `11100000` | **224** | | 7 | `11111110` | **254** |
+| 4 | `11110000` | **240** | | 8 | `11111111` | **255** |
 
 ---
 
-## 4. Conversion Examples
+## 5. Calculation Walkthroughs
 
-### Example A: Convert `/20` to Decimal
-1.  **Count the 1s:** 20 bits total.
-2.  **Fill Octets:** * 1st Octet: 8 bits (`255`)
-    * 2nd Octet: 8 bits (`255`)
-    * 3rd Octet: 4 bits remaining (`240` from chart)
-    * 4th Octet: 0 bits remaining (`0`)
-3.  **Result:** `255.255.240.0`
+### Scenario A: Class C Address with 2 bits borrowed
+**IP:** `192.168.1.0/26`
+* **Default Class C:** /24 (24 bits)
+* **Borrowed ($s$):** 2 bits (26 - 24)
+* **Hosts ($h$):** 6 bits (32 - 26)
+* **Subnets:** $2^2 = 4$
+* **Usable Hosts:** $2^6 - 2 = 62$
 
-
-### Example B: Convert `255.255.255.224` to CIDR
-1.  **Count the 1s:**
-    * `255` = 8 bits
-    * `255` = 8 bits
-    * `255` = 8 bits
-    * `224` = 3 bits (from chart)
-2.  **Sum:** $8 + 8 + 8 + 3 = 27$.
-3.  **Result:** `/27`
-
----
-
-## 5. Network vs. Host Bits
-The CIDR notation tells you exactly how much space is available for devices:
-* **Network Bits:** The CIDR number ($n$).
-* **Host Bits:** $32 - n$.
-* **Formula for Hosts:** $2^{(32-n)} - 2$ (We subtract 2 for the Network and Broadcast addresses).
-
-**Example for `/26`:**
-* **Network Bits:** 26
-* **Host Bits:** 6
-* **Total Hosts:** $2^6 - 2 = 62$ usable IP addresses.
+### Scenario B: Class B Address with 5 bits borrowed
+**IP:** `172.16.0.0/21`
+* **Default Class B:** /16 (16 bits)
+* **Borrowed ($s$):** 5 bits (21 - 16)
+* **Hosts ($h$):** 11 bits (32 - 21)
+* **Subnets:** $2^5 = 32$
+* **Usable Hosts:** $2^{11} - 2 = 2,046$
 
 ---
 
 > [!TIP]
-> While **Windows** usually expects the **Decimal Mask** (255.255.255.0), **Routers and Switches** almost always prefer **CIDR Notation**.
+> **Why do we subtract 2?** The first address in any subnet is the **Network ID** (all host bits 0), and the last address is the **Broadcast ID** (all host bits 1). Neither can be assigned to a computer or router.
