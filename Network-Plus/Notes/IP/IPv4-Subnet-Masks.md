@@ -81,4 +81,4 @@ The CIDR notation tells you exactly how much space is available for devices:
 ---
 
 > [!TIP]
-> While **Windows** usually expects the **Decimal Mask** (255.255.255.0), **Routers and Switches** almost always prefer **CIDR Notation** (/24).
+> While **Windows** usually expects the **Decimal Mask** (255.255.255.0), **Routers and Switches** almost always prefer **CIDR Notation**.
