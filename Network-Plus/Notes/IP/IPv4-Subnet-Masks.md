@@ -39,12 +39,12 @@ Using the powers of 2, you can quickly calculate the dimensions of any network:
 ## 4. Subnetting "Cheat Sheet" (The Magic Table)
 Within a single octet, these are the only possible decimal values:
 
-| 1s | Binary | Decimal | | 1s | Binary | Decimal |
+| 1s | Binary | Decimal | 1s | Binary | Decimal |
 | :--- | :--- | :--- | --- | :--- | :--- | :--- |
-| 1 | `10000000` | **128** | | 5 | `11111000` | **248** |
-| 2 | `11000000` | **192** | | 6 | `11111100` | **252** |
-| 3 | `11100000` | **224** | | 7 | `11111110` | **254** |
-| 4 | `11110000` | **240** | | 8 | `11111111` | **255** |
+| 1 | `10000000` | **128** | 5 | `11111000` | **248** |
+| 2 | `11000000` | **192** | 6 | `11111100` | **252** |
+| 3 | `11100000` | **224** | 7 | `11111110` | **254** |
+| 4 | `11110000` | **240** | 8 | `11111111` | **255** |
 
 ---
 
