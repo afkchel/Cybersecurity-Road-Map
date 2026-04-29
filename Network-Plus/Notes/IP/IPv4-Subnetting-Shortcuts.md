@@ -17,10 +17,9 @@ The Magic Number method focuses on a specific calculation derived from the subne
 ---
 
 ## Part 2: The Seven-Second Subnetting Method
-This method relies on a pre-built reference chart to eliminate math during the exam, focusing on visual boundaries.
+This method relies on a pre-built reference chart to eliminate math, focusing on visual boundaries.
 
 ### The Reference Chart
-Build this table at the start of the session to use as a lookup tool:
 
 | CIDR (Octet 2/3/4) | Subnet Mask | Addresses per Block |
 | :--- | :--- | :--- |
