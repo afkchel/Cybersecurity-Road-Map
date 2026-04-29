@@ -20,15 +20,8 @@ These reference tables were utilized to perform rapid calculations for masks and
 | /7 | /15 | /23 | /31 | 254 | 128 | 2 |
 | /8 | /16 | /24 | /32 | 255 | 256 | 1 |
 
-### Network Boundary Jump Table (Magic Numbers)
-| Addresses | | | | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **128** | 0 | 128 | | | | | | |
-| **64** | 0 | 64 | 128 | 192 | | | | |
-| **32** | 0 | 32 | 64 | 96 | 128 | 160 | 192 | 224 |
-| **16** | 0 | 16 | 32 | 48 | 64 | 80 | 96 | 112 |
-| **8** | 0 | 8 | 16 | 24 | 32 | 40 | 48 | 56 |
-| **4** | 0 | 4 | 8 | 12 | 16 | 20 | 24 | 28 |
+### Network Address Subnet Boundaries
+<img width="1384" height="171" alt="image" src="https://github.com/user-attachments/assets/e883286b-96f2-40ce-a7ea-176117043d6a" />
 
 ---
 
