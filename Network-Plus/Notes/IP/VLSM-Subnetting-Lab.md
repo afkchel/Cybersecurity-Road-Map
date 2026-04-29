@@ -60,7 +60,7 @@ These reference tables were utilized to perform rapid calculations for masks and
 *   **Chart Lookup**: Smallest block fitting 2 is **4** (CIDR **/30**).
 *   **Network IP**: `172.16.10.64` (First available after HR).
 *   **Mask**: `255.255.255.252`.
-*   **Boundary**: Jump table shows next block at `.68`, so broadcast is `.67`.
+*   **Boundary**: Address table shows next block at `.68`, so broadcast is `.67`.
 *   **Usable Range**: `172.16.10.65 - 172.16.10.66`
 
 ---
