@@ -52,7 +52,7 @@ These reference tables were utilized to perform rapid calculations for masks and
 *   **Chart Lookup**: Smallest block fitting 50 is **64** (CIDR **/26**).
 *   **Network IP**: `172.16.10.0` (First available after Marketing).
 *   **Mask**: `255.255.255.192`.
-*   **Boundary**: Jump table shows next block at `.64`, so broadcast is `.63`.
+*   **Boundary**: Subnet Boundaries table shows next block at `.64`, so broadcast is `.63`.
 *   **Usable Range**: `172.16.10.1 - 172.16.10.62`
 
 ### D. Site-to-Site WAN: 2 Hosts (Seven-Second Shortcut)
