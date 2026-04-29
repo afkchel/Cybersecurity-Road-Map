@@ -1,7 +1,7 @@
 # Lab: Enterprise IPv4 Subnetting & VLSM Design
 
 ## 1. Scenario Overview
-The **Global-Tech Solutions** corporation has been assigned a single Class B private address block: **`172.16.0.0/16`**. As the Network Engineer, your task is to segment this space into efficient subnets to support various departments while minimizing address waste.
+The **Global-Tech Solutions** corporation has been assigned a single Class B private address block: **`172.16.0.0/16`**. As the Network Engineer, my task is to segment this space into efficient subnets to support various departments while minimizing address waste.
 
 ---
 
