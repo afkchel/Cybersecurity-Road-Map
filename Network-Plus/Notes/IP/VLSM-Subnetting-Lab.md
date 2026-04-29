@@ -27,7 +27,7 @@ These reference tables were utilized to perform rapid calculations for masks and
 
 ## 3. Subnetting Implementation
 
-### A. Operations: 2,000 Hosts (Manual Binary)
+### A. Operations: 2,000 Hosts (Manual)
 *   **Host bits calculation**: $2^{11} - 2 = 2,046$ usable hosts. $n = 11$ host bits.
 *   **Binary Mask**: `11111111.11111111.11111000.00000000`
 *   **CIDR**: `/21`
