@@ -41,7 +41,7 @@ These reference tables were utilized to perform rapid calculations for masks and
 *   **CIDR**: $32 - 9 = /23$
 *   **IP Starting Point**: `172.16.8.0` (First available after Operations).
 *   **Mask**: `255.255.254.0`
-*   **Magic Number**: $256 - 254 = 2$.
+*   **Block size**: $256 - 254(subnet mask octet) = 2$.
 *   **Broadcast Calculation**: $8 + (2) - 1 = 9$ (in the 3rd octet).
 *   **Network IP**: `172.16.8.0`
 *   **Broadcast**: `172.16.9.255`
@@ -53,6 +53,7 @@ These reference tables were utilized to perform rapid calculations for masks and
 *   **Network IP**: `172.16.10.0` (First available after Marketing).
 *   **Mask**: `255.255.255.192`.
 *   **Boundary**: Subnet Boundaries table shows next block at `.64`, so broadcast is `.63`.
+*   **Broadcast**: `172.16.10.63`
 *   **Usable Range**: `172.16.10.1 - 172.16.10.62`
 
 ### D. Site-to-Site WAN: 2 Hosts (Seven-Second Shortcut)
@@ -69,7 +70,7 @@ These reference tables were utilized to perform rapid calculations for masks and
 
 | Subnet | Network IP | CIDR | Subnet Mask | Broadcast | Usable Range |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Operations** | `172.16.0.0` | `/21` | `255.255.248.0` | `172.16.7.255` | `.0.1 - .7.254` |
-| **Marketing** | `172.16.8.0` | `/23` | `255.255.254.0` | `172.16.9.255` | `.8.1 - .9.254` |
-| **HR** | `172.16.10.0` | `/26` | `255.255.255.192` | `172.16.10.63` | `.10.1 - .10.62` |
-| **WAN** | `172.16.10.64` | `/30` | `255.255.255.252` | `172.16.10.67` | `.10.65 - .10.66` |
+| **Operations** | `172.16.0.0` | `/21` | `255.255.248.0` | `172.16.7.255` | `172.16.0.1 – 172.16.7.254` |
+| **Marketing** | `172.16.8.0` | `/23` | `255.255.254.0` | `172.16.9.255` | `172.16.8.1 - 172.16.9.254` |
+| **HR** | `172.16.10.0` | `/26` | `255.255.255.192` | `172.16.10.63` | `172.16.10.1 - 172.16.10.62` |
+| **WAN** | `172.16.10.64` | `/30` | `255.255.255.252` | `172.16.10.67` | `172.16.10.65 - 172.16.10.66` |
