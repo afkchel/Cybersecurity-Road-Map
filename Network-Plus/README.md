@@ -17,7 +17,7 @@ This directory serves as a central hub for my practical journey through the **Co
 ### 1. Network Fundamentals
 - **Artifacts:** [OSI Model](./Notes/OSI-Model.md), Ethernet Cabling Guide (T568A/B).
 
-### 2. [IP Addressing & Subnetting](./Labs/Subnetting)
+### 2. [IP Addressing & Subnetting](./Notes/IP)
 *Focus: IPv4/IPv6, Classless Inter-Domain Routing (CIDR), and VLSM.*
 - **Practical:** Subnetting challenge solutions and IP planning for small-to-medium business (SMB) networks.
 
