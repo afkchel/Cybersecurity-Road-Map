@@ -53,3 +53,39 @@ Used for remote locations where traditional cable or fiber is unavailable.
 *   **Rain Fade:** Signal interference caused by environmental factors like rain or snow.
 
 ---
+
+## Wireless Network Modes
+
+* Infrastructure Mode: Devices connect to a central Access Point (AP).
+* IBSS (Independent Basic Service Set): Also known as ad hoc mode.
+* Devices communicate directly with each other without an access point.
+   * Commonly used for initial configuration of IoT devices (e.g., smart lights, door locks).
+
+## 2. Service Set Identifiers
+
+* SSID (Service Set Identifier): The human-readable name of the wireless network (e.g., "SGC1").
+* BSSID (Basic Service Set Identifier): The hardware (MAC) address of a specific access point (e.g., 60:3D:26:11:22:33). This differentiates APs sharing the same SSID.
+* ESSID (Extended Service Set Identifier): Used when multiple access points share the same SSID across a large area. This allows for seamless roaming as a user moves through a building.
+
+## 3. Network Access & Authentication
+
+* Captive Portal: A web page that appears when first connecting to a network.
+* Requires users to agree to terms or provide authentication (username/password).
+   * Uses a centralized access table to track authenticated devices for a set duration (e.g., 24 hours).
+
+## 4. Wireless Security Modes
+
+* Open System: No security, no encryption, no authentication.
+* OWE (Opportunistic Wireless Encryption): Provides encryption but prevents direct communication between wireless devices on the same network.
+* Personal / PSK (Pre-Shared Key): Everyone uses the same password (e.g., a coffee shop password).
+* Enterprise / 802.1x:
+* Uses individual credentials (unique usernames and passwords).
+   * Centralized management: if an employee leaves, their specific access is disabled.
+* Legacy/Modern Standards: Supports WEP, WPA, WPA2, and WPA3.
+
+## 5. Antennas
+
+* Omnidirectional:
+* Distributes signal evenly in all directions.
+   * Best for placement in the center of a room or home.
+* Directional (Implicit): Mentioned as a potential alternative for specific layouts, such as when an AP is placed in the corner of a building.
