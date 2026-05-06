@@ -54,38 +54,49 @@ Used for remote locations where traditional cable or fiber is unavailable.
 
 ---
 
-## Wireless Network Modes
+## Wireless Service Sets
 
-* Infrastructure Mode: Devices connect to a central Access Point (AP).
-* IBSS (Independent Basic Service Set): Also known as ad hoc mode.
-* Devices communicate directly with each other without an access point.
-   * Commonly used for initial configuration of IoT devices (e.g., smart lights, door locks).
+*   **IBSS (Independent Basic Service Set)**: Also known as an **ad hoc connection**. This allows two devices to communicate directly with each other without an access point. This is common for setting up Internet of Things (IoT) devices, such as smart door locks.
+*   **BSS (Basic Service Set)**: The standard wireless network where multiple devices connect to a single central access point.
 
-## 2. Service Set Identifiers
+---
 
-* SSID (Service Set Identifier): The human-readable name of the wireless network (e.g., "SGC1").
-* BSSID (Basic Service Set Identifier): The hardware (MAC) address of a specific access point (e.g., 60:3D:26:11:22:33). This differentiates APs sharing the same SSID.
-* ESSID (Extended Service Set Identifier): Used when multiple access points share the same SSID across a large area. This allows for seamless roaming as a user moves through a building.
+## Wireless Identifiers
+To manage and differentiate between networks and hardware, several identifiers are used:
 
-## 3. Network Access & Authentication
+*   **SSID (Service Set Identifier)**: The human-readable name of the wireless network (e.g., "SGC1") that appears when searching for available connections.
+*   **BSSID (Basic Service Set Identifier)**: The unique hardware MAC address of a specific access point. This allows devices to differentiate between two different pieces of hardware that might be broadcasting the same network name.
+*   **ESSID (Extended Service Set Identifier)**: Used when multiple access points across a large area share the same SSID. This allows a user to walk through a building and seamlessly "roam" from one access point to another without losing connectivity.
 
-* Captive Portal: A web page that appears when first connecting to a network.
-* Requires users to agree to terms or provide authentication (username/password).
-   * Uses a centralized access table to track authenticated devices for a set duration (e.g., 24 hours).
+---
 
-## 4. Wireless Security Modes
+## 3. Network Access and Security
+Accessing a wireless network often involves different authentication methods depending on the environment:
 
-* Open System: No security, no encryption, no authentication.
-* OWE (Opportunistic Wireless Encryption): Provides encryption but prevents direct communication between wireless devices on the same network.
-* Personal / PSK (Pre-Shared Key): Everyone uses the same password (e.g., a coffee shop password).
-* Enterprise / 802.1x:
-* Uses individual credentials (unique usernames and passwords).
-   * Centralized management: if an employee leaves, their specific access is disabled.
-* Legacy/Modern Standards: Supports WEP, WPA, WPA2, and WPA3.
+*   **Captive Portal**: A screen that appears when first connecting, requiring users to agree to terms or provide credentials before gaining internet access. These are common in public spaces like hotels or airports.
+*   **Security Modes**:
+    *   **Open System**: No security or authentication required.
+    *   **Personal (PSK)**: Uses a **Pre-Shared Key** (password) that everyone on the network shares.
+    *   **Enterprise (802.1X)**: Requires unique credentials (username and password) for every user, often tied to their organizational account.
+    *   **OWE (Opportunistic Wireless Encryption)**: Allows a connection but prevents devices from communicating directly with each other on the same network.
 
-## 5. Antennas
+---
 
-* Omnidirectional:
-* Distributes signal evenly in all directions.
-   * Best for placement in the center of a room or home.
-* Directional (Implicit): Mentioned as a potential alternative for specific layouts, such as when an AP is placed in the corner of a building.
+## 4. Antennas and Signal Strength
+The choice of antenna determines how the wireless signal is distributed:
+
+*   **Omnidirectional**: Distributes the signal evenly in all directions. This is ideal for a central location in a home or office.
+*   **Directional**: Focuses the signal in a specific direction to increase range or performance.
+    *   **Yagi Antenna**: Very directional with high gain.
+    *   **Parabolic Antenna**: Focuses signals into a single point, useful for long-distance links.
+*   **Gain**: Measured in decibels (dB). A **3dB** increase effectively doubles the power of the signal.
+
+---
+
+## 5. Wireless Management
+In large environments, access points are managed differently than standalone home routers:
+
+*   **Autonomous Access Points**: Standalone devices that operate independently without additional software or hardware.
+*   **Lightweight Access Points**: Hardware that relies on a central controller for its "intelligence" and configuration.
+*   **Wireless LAN Controller (WLC)**: A central management station that provides a "single pane of glass" to monitor, configure, and report on the entire wireless infrastructure.
+*   **CAPWAP**: The standard protocol used for the **control and provisioning of wireless access points** from a central controller.
