@@ -70,7 +70,7 @@ To manage and differentiate between networks and hardware, several identifiers a
 
 ---
 
-## 3. Network Access and Security
+## Network Access and Security
 Accessing a wireless network often involves different authentication methods depending on the environment:
 
 *   **Captive Portal**: A screen that appears when first connecting, requiring users to agree to terms or provide credentials before gaining internet access. These are common in public spaces like hotels or airports.
@@ -82,7 +82,7 @@ Accessing a wireless network often involves different authentication methods dep
 
 ---
 
-## 4. Antennas and Signal Strength
+## Antennas and Signal Strength
 The choice of antenna determines how the wireless signal is distributed:
 
 *   **Omnidirectional**: Distributes the signal evenly in all directions. This is ideal for a central location in a home or office.
@@ -93,7 +93,7 @@ The choice of antenna determines how the wireless signal is distributed:
 
 ---
 
-## 5. Wireless Management
+## Wireless Management
 In large environments, access points are managed differently than standalone home routers:
 
 *   **Autonomous Access Points**: Standalone devices that operate independently without additional software or hardware.
