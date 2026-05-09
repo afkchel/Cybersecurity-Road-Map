@@ -47,6 +47,9 @@ I exported the raw scan data into a `.csv` format and enriched the data in Excel
 Using the gathered data, I designed a **Layered Network Map** in Draw.io. The map integrates three distinct layers of information:
 
 1. **Layer 1 (Physical)**: Visualized connection mediums (Ethernet vs. Wi-Fi).
+
+<img width="1105" height="850" alt="image" src="https://github.com/user-attachments/assets/b3ee8e09-dceb-4e12-903b-09feca4c1644" />
+
 2. **Layer 2 (Data Link)**: Included unique MAC addresses for every node.
 3. **Layer 3 (Network)**: Assigned static and dynamic IP addresses and identified the WAN DHCP connection.
 
