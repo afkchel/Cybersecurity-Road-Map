@@ -18,6 +18,7 @@ Modern documentation often overlays multiple OSI layers to provide a complete pi
 * **Layer 1**: The physical interfaces and wires.
 * **Layer 2**: MAC addresses and data link information.
 * **Layer 3**: IP addresses associated with those physical and MAC addresses.
+* **[Layered Network Lab](./Layered-Network-Lab.md)**
 
 ---
 
