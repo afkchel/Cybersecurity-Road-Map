@@ -39,8 +39,7 @@ I exported the raw scan data into a `.csv` format and enriched the data in Excel
 * **Connection Type**: Verified via the router admin page.
 
 **Final Asset Table:**
-<img width="1351" height="198" alt="image" src="https://github.com/user-attachments/assets/3c1bfc58-dcb8-4409-a427-a5fd0a3fe48b" />
-
+<img width="1348" height="189" alt="image" src="https://github.com/user-attachments/assets/7e3d0348-13b3-41fa-bce5-6857030b91aa" />
 
 ### Phase 4: Layered Network Mapping
 
