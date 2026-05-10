@@ -1,4 +1,4 @@
-# Life-Cycle Management (LCM) Standard Operating Procedure
+# Life-Cycle Management (LCM) 
 
 ## 1. Product Life-Cycle Stages
 
