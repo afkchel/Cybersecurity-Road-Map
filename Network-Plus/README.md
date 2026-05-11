@@ -27,7 +27,7 @@ This directory serves as a central hub for my practical journey through the **Co
 
 ### 4. Network Operations & Security
 *Focus: Troubleshooting utilities, Firewalls, VPNs, and Hardening.*
-- **Analysis:** Wireshark PCAP analysis of DNS, HTTP, and Three-way Handshake.
+- **Analysis:** [Wireshark PCAP analysis of DNS, HTTP, and Three-way Handshake.](./Notes/The-Protocol-Hunter-Lab.md)
 
 ---
 
