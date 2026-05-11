@@ -42,11 +42,4 @@ This directory serves as a central hub for my practical journey through the **Co
 
 ---
 
-## 📑 Exam Readiness Tracker
-- **Current Progress:** Video [X] of 87
-- **Daily Goal:** 2-3 videos + 1 Practical Lab
-- **Target Exam Date:** [Insert Month, Year]
-
----
-
 > *"The best way to understand a network is to capture its traffic and see it for yourself."*
