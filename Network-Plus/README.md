@@ -31,7 +31,7 @@ This directory serves as a central hub for my practical journey through the **Co
 
 ---
 
-## 🚀 Hands-on Progress (TryHackMe)
+## [🚀 Hands-on Experience (TryHackMe)](https://tryhackme.com/p/afkchel)
 
 | Room Name | Status | Key Skills Learned |
 | :--- | :--- | :--- |
