@@ -19,7 +19,7 @@ This directory serves as a central hub for my practical journey through the **Co
 
 ### 2. [IP Addressing & Subnetting](./Notes/IP)
 *Focus: IPv4/IPv6, Classless Inter-Domain Routing (CIDR), and VLSM.*
-- **Practical:** [Subnetting challenge solutions and IP planning for small-to-medium business (SMB) networks](/Notes/IP/VLSM-Subnetting-Lab.md).
+- **Practical:** [Subnetting challenge solutions and IP planning for small-to-medium business (SMB) networks](./Notes/IP/VLSM-Subnetting-Lab.md).
 
 ### 3. Network Implementations
 *Focus: Switching, Routing protocols (OSPF, BGP), and VLAN configuration.*
