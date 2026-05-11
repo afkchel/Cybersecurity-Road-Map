@@ -31,15 +31,4 @@ This directory serves as a central hub for my practical journey through the **Co
 
 ---
 
-## [🚀 Hands-on Experience (TryHackMe)](https://tryhackme.com/p/afkchel)
-
-| Room Name | Status | Key Skills Learned |
-| :--- | :--- | :--- |
-| **What is Networking?** | ✅ Completed | OSI Model, Encapsulation |
-| **Intro to LAN** | ✅ Completed | Topologies, Hubs/Switches |
-| **Intro to Subnetting** | 🔄 In Progress | Subnet masks, CIDR notation |
-| **Nmap** | ⏳ Planned | Port scanning, OS fingerprinting |
-
----
-
 > *"The best way to understand a network is to capture its traffic and see it for yourself."*
