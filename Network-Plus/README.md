@@ -21,11 +21,11 @@ This directory serves as a central hub for my practical journey through the **Co
 *Focus: IPv4/IPv6, Classless Inter-Domain Routing (CIDR), and VLSM.*
 - **Practical:** Subnetting challenge solutions and IP planning for small-to-medium business (SMB) networks.
 
-### 3. [Network Implementations](./Labs/Implementations)
+### 3. Network Implementations
 *Focus: Switching, Routing protocols (OSPF, BGP), and VLAN configuration.*
 - **Lab:** Inter-VLAN routing setup using Cisco Packet Tracer (includes `.pkt` files).
 
-### 4. [Network Operations & Security](./Labs/Security)
+### 4. Network Operations & Security
 *Focus: Troubleshooting utilities, Firewalls, VPNs, and Hardening.*
 - **Analysis:** Wireshark PCAP analysis of DNS, HTTP, and Three-way Handshake.
 
