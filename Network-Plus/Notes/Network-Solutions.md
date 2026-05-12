@@ -4,10 +4,10 @@
 
 When starting a troubleshooting session with no initial data, use discovery protocols and scanning techniques to build a map of the network.
 
-* **Discovery Protocols:**
+### **Discovery Protocols:**
 * **LLDP (Link Layer Discovery Protocol):** An open standard for switch-level discovery.
 * **CDP (Cisco Discovery Protocol):** Cisco’s proprietary version of link-layer discovery.
-* **Scanning Methods:**
+### **Scanning Methods:**
 * **Ping Scans:** Identifying devices that are currently active and responding on the network.
 * **Port Scans:** Identifying open services and applications on specific devices.
 * **SNMP (Simple Network Management Protocol):** Querying devices for specific performance and configuration data.
