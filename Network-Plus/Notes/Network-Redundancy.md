@@ -9,8 +9,8 @@ Active-Passive is a high-availability deployment where one device performs all n
 * **Operational Mechanism:** The two devices communicate constantly to monitor each other's status.
 * **Failover Process:** If the primary (active) device fails due to power loss or software crash, the secondary (passive) device detects the outage and automatically takes over as the primary.
 * **Synchronization Requirements:**
-* **Identical Configuration:** Both devices must have exactly the same settings.
-* **Stateful Updates:** Real-time data, such as session tables and routing tables, must be synchronized so the passive device can resume traffic flows without interruption.
+  - **Identical Configuration:** Both devices must have exactly the same settings.
+  - **Stateful Updates:** Real-time data, such as session tables and routing tables, must be synchronized so the passive device can resume traffic flows without interruption.
 
 ---
 
@@ -19,8 +19,8 @@ Active-Passive is a high-availability deployment where one device performs all n
 In an Active-Active setup, both devices are operational and processing network traffic simultaneously.
 
 * **Resource Utilization:** This allows the organization to utilize the full computing power of both devices rather than leaving one idle.
-  - **Traffic Distribution:** Different data flows are distributed across both active devices.
-  - **Failure Handling:** Since both units are already active, the failure of one does not require a formal "failover" transition; the remaining unit simply absorbs the total load.
+* **Traffic Distribution:** Different data flows are distributed across both active devices.
+* **Failure Handling:** Since both units are already active, the failure of one does not require a formal "failover" transition; the remaining unit simply absorbs the total load.
 
 ---
 
