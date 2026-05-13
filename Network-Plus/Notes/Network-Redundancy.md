@@ -19,8 +19,8 @@ Active-Passive is a high-availability deployment where one device performs all n
 In an Active-Active setup, both devices are operational and processing network traffic simultaneously.
 
 * **Resource Utilization:** This allows the organization to utilize the full computing power of both devices rather than leaving one idle.
-  * **Traffic Distribution:** Different data flows are distributed across both active devices.
-  * **Failure Handling:** Since both units are already active, the failure of one does not require a formal "failover" transition; the remaining unit simply absorbs the total load.
+  - **Traffic Distribution:** Different data flows are distributed across both active devices.
+  - **Failure Handling:** Since both units are already active, the failure of one does not require a formal "failover" transition; the remaining unit simply absorbs the total load.
 
 ---
 
