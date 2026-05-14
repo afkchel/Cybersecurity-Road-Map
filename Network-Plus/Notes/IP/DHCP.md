@@ -90,13 +90,13 @@ DHCP addresses are not permanent; they are "leased" for a specific time frame de
 Clients do not wait for the entire lease to expire before attempting to stay on the network.
 
 * **T1 Timer (Renewal):**
-* Triggers at **50%** of the lease duration.
-* The client attempts to communicate with the **original** DHCP server to renew the lease.
+  - Triggers at **50%** of the lease duration.
+  - The client attempts to communicate with the **original** DHCP server to renew the lease.
 
 
 * **T2 Timer (Rebinding):**
-* Triggers at **87.5% (7/8)** of the lease duration.
-* If the original server is unavailable, the client attempts to renew with **any available** DHCP server on the network.
+  - Triggers at **87.5% (7/8)** of the lease duration.
+  - If the original server is unavailable, the client attempts to renew with **any available** DHCP server on the network.
 
 ---
 
