@@ -25,19 +25,29 @@ this lab provides clear packet-level proof of how an address is requested, offer
 
 ```
 
-### B. Key Information
+### B. Forcing a Fresh DHCP Sequence
 
-* **DHCP Server / Gateway:** `192.168.31.1`
-* **Target Client Machine:** `192.168.31.154`
-* **Network Segment Scope:** `192.168.31.0/24`
+By default, computers remember their old settings and take a shortcut to renew them. To capture the full **DORA** sequence, we use two Windows commands to force the computer to start from scratch:
+
+```cmd
+:: 1. Disconnect: Drop the current IP and reset to 0.0.0.0
+ipconfig /release
+
+:: 2. Reconnect: Force a brand-new DORA broadcast sequence
+ipconfig /renew
+
+```
+
+#### What These Commands Do:
+
+1. **`ipconfig /release`** This tells the computer to give up its current IP address (`192.168.31.154`) and send a **Release** packet to the router. The computer's IP drops to `0.0.0.0`, completely disconnecting it from the network.
+2. **`ipconfig /renew`** With the computer's network identity wiped, this command forces it to find a router from scratch. It wakes up the network card and instantly triggers the **DORA** process to pull down a fresh network configuration.
 
 ---
 
 ## 3. Captured Traffic & Empirical Analysis
 
 The packet capture shows every step the computer and router take to negotiate and finalize the IP address lease.
-
-### Traffic Overview Matrix
 
 <img width="875" height="143" alt="image" src="https://github.com/user-attachments/assets/17f65fe6-7181-4149-9f16-f05adab01c4d" />
 
@@ -64,7 +74,7 @@ The packet capture shows every step the computer and router take to negotiate an
 * **What's happening:** The router hears the request and offers an IP address.
 * **Details:** The router (`192.168.31.1`) looks at the transaction ID and sends a packet back to the client, proposing `192.168.31.154` as its new IP address. This packet also includes basic subnet rules and lease times.
 
-* <img width="1002" height="726" alt="image" src="https://github.com/user-attachments/assets/73ac3dbb-b547-4e40-a54c-4bc7005a9650" />
+<img width="1002" height="726" alt="image" src="https://github.com/user-attachments/assets/73ac3dbb-b547-4e40-a54c-4bc7005a9650" />
 
 
 #### 3. R - DHCP Request (Packet #1108)
@@ -72,10 +82,14 @@ The packet capture shows every step the computer and router take to negotiate an
 * **What's happening:** The computer says, "Yes, I'll take that IP address."
 * **Details:** Even though it picked an address, the computer still doesn't officially own it yet, so it keeps its source as `0.0.0.0` and sends another broadcast to `255.255.255.255`. Broadcasting this step lets the main router know its offer was accepted, while telling any other DHCP servers on the network that they can release their offers.
 
+<img width="1131" height="141" alt="image" src="https://github.com/user-attachments/assets/17057c05-7287-4591-b09a-16c318184769" />
+
 #### 4. A - DHCP Acknowledgment (Packet #1109)
 
 * **What's happening:** The router finalizes the deal and confirms the settings.
 * **Details:** The router sends a final confirmation to `192.168.31.154`. This packet contains the actual network configuration settings the computer needs to work—like the subnet mask, default gateway, and DNS servers. The computer applies these settings and is now fully connected.
+
+<img width="1105" height="657" alt="image" src="https://github.com/user-attachments/assets/101fd618-9643-46f9-a32c-6384090577df" />
 
 ---
 
