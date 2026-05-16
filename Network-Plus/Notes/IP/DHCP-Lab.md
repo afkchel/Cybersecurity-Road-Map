@@ -12,7 +12,7 @@ this lab provides clear packet-level proof of how an address is requested, offer
 
 ---
 
-## 2. Network Topology & Addressing Schema
+## 2. Network Topology & DHCP initiation
 
 ### A. Topology
 
