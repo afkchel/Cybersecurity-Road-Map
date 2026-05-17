@@ -79,8 +79,8 @@ Exposing management interfaces (like SSH or RDP) directly to the public internet
 
 * **Definition:** A **Jump Server** (also called a Bastion Host) is a highly fortified, internet-facing proxy device acting as a single entry gate into a secure corporate network segment.
 * **Access Workflow:**
-1. A remote user initiates a secure VPN or SSH session directly into the **Jump Server**.
-2. The user passes aggressive authentication checkpoints, which must mandate **Multi-Factor Authentication (MFA)** to block automated brute-force attacks.
-3. Once authorized inside the Jump Server, the administrator can pivot ("jump") to internal switches, routers, and databases using local in-band tools without maintaining multiple public entry endpoints.
+    1. A remote user initiates a secure VPN or SSH session directly into the **Jump Server**.
+    2. The user passes aggressive authentication checkpoints, which must mandate **Multi-Factor Authentication (MFA)** to block automated brute-force attacks.
+    3. Once authorized inside the Jump Server, the administrator can pivot ("jump") to internal switches, routers, and databases using local in-band tools without maintaining multiple public entry endpoints.
 
 * **Maintenance Constraint:** Because the Jump Server faces the open web, it must be consistently patched, hardened, and monitored for unauthorized connection requests.
