@@ -1,7 +1,5 @@
 # Authentication Frameworks and Identity Protocols
 
-This document details the AAA security model, single sign-on mechanics, directory access structures, federated web protocols, and multi-factor authentication validation.
-
 ---
 
 ## 1. The AAA Security Framework
