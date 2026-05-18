@@ -17,21 +17,16 @@ Rather than fighting automated attack programs blindly, defensive teams deploy i
 
 Every security decision made within an organization is driven by calculating, managing, and mitigating operational risk.
 
-
-```
-
-
-text
+```text
 ┌────────────────┐      Takes Action      ┌───────────────┐      Weaponizes      ┌─────────────────┐
 │  Threat Agent  │ ─────────────────────► │    Threat     │ ───────────────────► │     Exploit     │
 └────────────────┘                        └───────┬───────┘                      └────────┬────────┘
-│                                       │
-│ Impacts                               │ Breaches
-▼                                       ▼
-┌───────────────┐                      ┌─────────────────┐
-│     Risk      │                      │  Vulnerability  │
-└───────────────┘                      └─────────────────┘
-
+                                                  │                                       │
+                                                  │ Impacts                               │ Breaches
+                                                  ▼                                       ▼
+                                          ┌───────────────┐                      ┌─────────────────┐
+                                          │     Risk      │                      │  Vulnerability  │
+                                          └───────────────┘                      └─────────────────┘
 ```
 
 * **Risk:** The baseline exposure to harm or danger. It is the calculated probability and business impact of an adverse event occurring during organizational shifts (e.g., deploying new software, changing port configurations).
@@ -45,7 +40,7 @@ text
 
 ## 3. The Core Pillars of Security: The CIA Triad
 
-To counteract threats, information technology systems measure their defensive stance using three fundamental principles. This is occasionally referred to as the **AIC Triad** to prevent naming confusion with government agencies.
+To counteract threats, information technology systems measure their defensive stance using three fundamental principles. This is occasionally referred to as the **AIC Triad** to prevent naming confusion with the US intelligence agency.
 
 ### A. Confidentiality (C)
 * **Objective:** Assuring that sensitive data is restricted from unauthorized viewing or interception.
