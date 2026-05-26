@@ -1,7 +1,5 @@
 # Hardware Optimization: Power over Ethernet and Transceiver Power Budgets
 
-This document outlines the mechanics, standards, and calculations for Power over Ethernet (PoE) deployment and modular fiber optic transceiver integration.
-
 ---
 
 ## 1. Power over Ethernet (PoE) Architecture
@@ -45,9 +43,19 @@ To ensure that a light signal arrives with enough strength for the remote receiv
 
 * **Receiver Sensitivity Level:** The minimum usable signal strength an optical interface needs to cleanly receive and interpret incoming data payloads without corruption. This hardware ceiling is documented as a negative decibel per milliwatt value (e.g., **-17 dBm**).
 * **The Mathematical Formula:**
-  $$	ext{Expected Received Power} = 	ext{Transmitter Output Power (dBm)} - 	ext{Total Medium Path Loss}$$
+  $$
+  \text{Expected Received Power} =
+  \text{Transmitter Output Power (dBm)}
+  -
+  \text{Total Medium Path Loss}
+  $$
   
-  $$	ext{Total Medium Path Loss} = 	ext{Fiber Attenuation over Distance} + 	ext{Cumulative Losses from Connectors/Splices}$$
+  $$
+  \text{Total Medium Path Loss} =
+  \text{Fiber Attenuation over Distance}
+  +
+  \text{Cumulative Losses from Connectors/Splices}
+  $$
 
 * **Link Integrity Validation:**
   * If the calculated *Expected Received Power* is closer to zero than the sensitivity threshold (e.g., a received power of **-14 dBm** on a transceiver rated for **-17 dBm**), the signal is strong enough and the link is valid.
