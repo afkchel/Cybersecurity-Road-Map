@@ -45,10 +45,7 @@ To ensure that a light signal arrives with enough strength for the remote receiv
 * **The Mathematical Formula:**
   $$
   \text{Expected Received Power} =
-  \text{Transmitter Output Power (dBm)}
-  -
-  \text{Total Medium Path Loss}
-  $$
+  \text{Transmitter Output Power (dBm)} - \text{Total Medium Path Loss} $$
   
   $$
   \text{Total Medium Path Loss} =
