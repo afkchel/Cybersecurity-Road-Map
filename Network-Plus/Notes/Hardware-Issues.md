@@ -43,6 +43,7 @@ To ensure that a light signal arrives with enough strength for the remote receiv
 
 * **Receiver Sensitivity Level:** The minimum usable signal strength an optical interface needs to cleanly receive and interpret incoming data payloads without corruption. This hardware ceiling is documented as a negative decibel per milliwatt value (e.g., **-17 dBm**).
 * **The Mathematical Formula:**
+
   $$
   \text{Expected Received Power} =
   \text{Transmitter Output Power (dBm)} - \text{Total Medium Path Loss} $$
